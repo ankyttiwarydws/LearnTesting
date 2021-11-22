@@ -44,7 +44,7 @@ public class Test1 {
 		}
 		
 		
- 		Thread.sleep(5000);
+ 		Thread.sleep(5000); 
 		driver.findElement(By.linkText("Create New Account")).click();
 		
 		//Dropdown Select 
