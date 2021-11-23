@@ -23,8 +23,9 @@ public class Test2 {
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		Thread.sleep(6000);
-		//driver.findElement(By.xpath("//a[@linkText='Sign up with phone or email']div/span/a")).click();
-		driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[3]/a")).click();
+		driver.findElement(By.xpath("//span[text()='Sign up with phone or email']")).click();
+		//driver.findElement(By.xpath("//a[@href='/i/flow/signup']")).click();
+		//driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[3]/a")).click();
 		
 //		driver.findElement(By.xpath("//input[contains(@name,'q')]")).sendKeys("Ank");
 //		driver.navigate().to("https://twitter.com");
@@ -40,11 +41,11 @@ public class Test2 {
 ////		{
 ////			System.out.println("Links "+ li.get(i).getText());
 ////		}
-		driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[3]/a")).click();
+		//driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[3]/a")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.name("name")).sendKeys("Ank");
-		Select select = new Select(driver.findElement(By.xpath("//select[contains(@id,'SELECTOR_4']")));
-		select.selectByVisibleText("March");
+		Select select = new Select(driver.findElement(By.xpath("//select[contains(@className,'r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-1fmj7o5 r-1loqt21 r-37j5jr r-1inkyih r-rjixqe r-crgep1 r-1wzrnnt r-1ny4l3l r-t60dpp r-xd6kpl r-1pn2ns4 r-ttdzmv']")));
+		select.selectByVisibleText("20");
 	}
 
 }
