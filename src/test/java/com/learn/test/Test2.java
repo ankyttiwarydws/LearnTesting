@@ -44,7 +44,7 @@ public class Test2 {
 		//driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div/main/div/div/div/div[1]/div/div[3]/a")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.name("name")).sendKeys("Ank");
-		Select select = new Select(driver.findElement(By.xpath("//select[contains(@className,'r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-1fmj7o5 r-1loqt21 r-37j5jr r-1inkyih r-rjixqe r-crgep1 r-1wzrnnt r-1ny4l3l r-t60dpp r-xd6kpl r-1pn2ns4 r-ttdzmv']")));
+		Select select = new Select(driver.findElement(By.xpath("//select[contains(@class,'r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-1fmj7o5 r-1loqt21 r-37j5jr r-1inkyih r-rjixqe r-crgep1 r-1wzrnnt r-1ny4l3l r-t60dpp r-xd6kpl r-1pn2ns4 r-ttdzmv']")));
 		select.selectByVisibleText("20");
 	}
 
