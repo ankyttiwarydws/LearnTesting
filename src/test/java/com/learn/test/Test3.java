@@ -10,9 +10,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
 
 public class Test3 {
-
+@BeforeClass
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","/Users/ankittiwari/Downloads/chromedriver");
 		WebDriver driver = new ChromeDriver();
